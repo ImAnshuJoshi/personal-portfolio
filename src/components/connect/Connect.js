@@ -18,7 +18,6 @@ function connect() {
                 })
             }
         </div>
-        <div className='verticle-line'></div>
     </aside>
   )
 }

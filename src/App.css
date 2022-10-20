@@ -56,7 +56,6 @@ body {
   font-family: var(--font-nunito);
 }
 
-
 /* GLOBAL CLASSES */
 .flex {
   display: flex;
@@ -329,5 +328,100 @@ body {
   }
   .verticle-line {
     display: none;
+  }
+}
+
+/* HERO STYLING */
+.hero {
+  min-height: 95vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* margin-left: var(--spacing-large); */
+  margin-left: 150px;
+}
+.hero-big-heading>p{
+  width:30vw;
+}
+.hero-header{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.hero-header>img{
+  width:35rem;
+  height:35rem;
+  /* box-shadow: rgba(255, 255, 255, 0.56) 0px 22px 70px 4px; */
+  filter: drop-shadow(10px 10px 3.75rem rgb(255, 255, 255));
+}
+.background-img{
+    width: 350px;
+    height: 250px;
+    background: #808080;
+    opacity: 0.5;
+    display: block;
+    border-radius: 50% 100% 50% 50% / 70% 70% 40% 40%;
+    transform: rotate(30deg);
+}
+.hero-big-heading {
+  margin: 0;
+  padding: 0;
+  font-weight: 00;
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: clamp(35px, 8vw, 80px);
+  color: var(--clr-primary-17);
+}
+.hero-big-heading::after{
+  content: "";
+  height:30px;
+  width:100px;
+  background-color: black;
+}
+.secondry-big-heading {
+  font-weight: 100;
+  font-size: clamp(30px, 4vw, 75px);
+  color: var(--clr-primary-15);
+}
+.secondry-big-heading::after {
+  content: 'MERN stack web developer';
+  transition: var(--transition);
+  animation: wordChange 4s linear infinite alternate;
+}
+@keyframes wordChange {
+  0% {
+    content: 'Web developer';
+  }
+  50% {
+    color: var(--clr-primary-1);
+  }
+  100% {
+    content: 'Student';
+  }
+}
+.hero-desc {
+  width: clamp(414px, 540px, 600px);
+  margin-top: var(--spacing-medium);
+  line-height: 1.5rem;
+  font-size: var(--font-large);
+}
+.hero-btn {
+  width: fit-content;
+  display: flex;
+  margin-top: var(--spacing-large);
+}
+.hero-btn a {
+  margin: 0;
+  padding: 0;
+}
+
+@media only screen and (max-width: 770px) {
+  .hero-desc {
+    width: auto;
+  }
+}
+@media only screen and (max-width: 325px) {
+  .hero {
+    min-height: 100vh;
   }
 }
