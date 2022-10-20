@@ -277,3 +277,57 @@ body {
     display: none;
   }
 }
+
+/* THEME STYLING */
+.theme {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 var(--spacing-large);
+}
+.theme-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.theme-circle {
+  width: 40px;
+  height: 40px;
+  margin: var(--spacing-smaller) 0;
+  border: 2px solid var(--clr-white);
+  border-radius: 50%;
+  transition: var(--transition);
+}
+.theme-circle:hover {
+  transform: scale(1.1);
+}
+.verticle-line {
+  width: 2px;
+  height: 30vh;
+  margin-top: var(--spacing-medium);
+  background-color: var(--clr-primary-5);
+}
+
+@media only screen and (max-width: 770px) {
+  .theme {
+    position: relative;
+    margin: 0;
+    flex-direction: row;
+  }
+  .theme-container {
+    flex-direction: row;
+  }
+  .theme-circle {
+    width: 20px;
+    height: 20px;
+    margin: 0 2px;
+  }
+  .verticle-line {
+    display: none;
+  }
+}
