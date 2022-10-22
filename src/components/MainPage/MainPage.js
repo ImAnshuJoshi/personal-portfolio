@@ -8,21 +8,25 @@ function MainPage() {
     return (
       <section className='hero'>
         <div className='hero-header'>
-          <div>
-          <h1 className='hero-big-heading'>ANSHU JOSHI  </h1>
-          <p>Hi , I am Anshu Joshi . I am currently in my sophomore year of Btech in CSE from IIIT Gwalior . I am passionate about development . I am currently exploring Blockchain development.</p>
-          </div>
-            <img src={me} alt="Me" />
-        </div>
-       
+          <div className='me-myself'>
+          <h1 className='hero-big-heading'>ANSHU JOSHI</h1>
+          <div className='me-resume'>
+          <p className='me-desc'>Hi , I am Anshu Joshi . I am currently in my sophomore year of Btech in CSE from IIIT Gwalior . I am passionate about development . I am currently exploring Blockchain development.</p>
+          <a download='Anshu-Joshi-Resume' href="">
         <button
           className='hero-btn primary-btn'
           onClick={() => setDownload(true)}
-        >
-          <a download='Anshu-Joshi-Resume'>
+          >
             <p>{download ? 'Thanks For Your Interest !' : 'Download Resume'}</p>
-          </a>
         </button>
+          </a>
+          </div>
+          </div>
+        <div className='me-img-div'>
+            <img className="me-img" src={me} alt="Me" />
+        </div>
+        </div>
+       
       </section>
     );
   }

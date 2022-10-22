@@ -136,6 +136,7 @@ body {
   background-color: var(--clr-primary-1);
   transition: top 0.125s linear;
   margin-top: var(--spacing-medium);
+  background: none;
 }
 .nav-high-brightness {
   box-shadow: 0 0 var(--spacing-large) var(--clr-primary-1);
@@ -343,34 +344,37 @@ body {
 .hero-big-heading>p{
   width:30vw;
 }
+.me-myself{
+  /* width:10vw; */
+}
+.me-img-div{
+  width:40rem;
+  height:40rem;
+  filter: drop-shadow(10px 10px 5.75rem rgb(255, 255, 255));
+  position: absolute;
+  display: flex;
+  justify-content: flex-start;
+  transform: translateX(-5rem);
+  max-height: auto;
+}
+.hero-big-heading{
+  font-family: 'IBM Plex Sans', sans-serif;
+  /* font-size: clamp(55px, 8vw, 80px); */
+  font-size: 5rem;
+  width:80vw;
+  color: var(--clr-primary-17);
+}
+.me-desc{
+  width:30vw;
+  text-align:end;
+}
 .hero-header{
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  align-items: center;
-}
-.hero-header>img{
-  width:35rem;
-  height:35rem;
-  /* box-shadow: rgba(255, 255, 255, 0.56) 0px 22px 70px 4px; */
-  filter: drop-shadow(10px 10px 3.75rem rgb(255, 255, 255));
-}
-.background-img{
-    width: 350px;
-    height: 250px;
-    background: #808080;
-    opacity: 0.5;
-    display: block;
-    border-radius: 50% 100% 50% 50% / 70% 70% 40% 40%;
-    transform: rotate(30deg);
-}
-.hero-big-heading {
-  margin: 0;
-  padding: 0;
-  font-weight: 00;
-  font-family: 'IBM Plex Sans', sans-serif;
-  font-size: clamp(35px, 8vw, 80px);
-  color: var(--clr-primary-17);
+  align-items: flex-end;
+  width:80vw;
+  margin-top: 0px;
 }
 .hero-big-heading::after{
   content: "";
@@ -387,6 +391,14 @@ body {
   content: 'MERN stack web developer';
   transition: var(--transition);
   animation: wordChange 4s linear infinite alternate;
+}
+.me-resume{
+  display: flex;
+  flex-direction: column;
+  width: 80vw;
+  justify-content: flex-end;
+  align-items: flex-end;
+  text-align: start;
 }
 @keyframes wordChange {
   0% {
@@ -415,6 +427,40 @@ body {
   padding: 0;
 }
 
+@media only screen and (max-width: 1143px){
+  body{
+    overflow-x: hidden;
+  }
+  .hero-big-heading{
+    margin-left: 20vw;;
+  }
+  .me-resume{
+    /* position: absolute; */
+    transform: translate(-40vw,40vw);
+    width: 80vw;
+    margin-left: 30vw;
+  }
+  .me-desc{
+    width:80vw;
+    text-align: center;
+  }
+  .me-img{
+  }
+  .me-img-div{
+    margin-top: 1000px;
+    text-align: center;
+  }
+  .me-resume{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+@media only screen and (max-width: 900px){
+  .hero-big-heading{
+    transform: translateX(-80px);
+  }
+}
 @media only screen and (max-width: 770px) {
   .hero-desc {
     width: auto;
