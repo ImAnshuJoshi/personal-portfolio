@@ -1,7 +1,7 @@
 import React from 'react'
 import { FaStackOverflow } from 'react-icons/fa';
 import { languages } from '../../data'
-import Languageicon from '../LanguageIcon/Languageicon';
+import Languageicon from '../LanguageIcon/Languageicon.js';
 
 function Skills() {
   return (

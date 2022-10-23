@@ -11,10 +11,10 @@ function App() {
   return (
     <div className="App">
       <Navbar mainRef={mainRef}/>
-      <Connect/>
       <Theme/>
       <MainPage/>
       {/* <Skills/> */}
+      <Connect/>
     </div>
   );
 }
