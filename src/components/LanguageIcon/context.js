@@ -1,6 +1,6 @@
 import React from 'react';
-
-const AppContext = React.createContext();
+import { createContext } from 'react';
+const AppContext = createContext();
 
 export const AppProvider = ({ children }) => {
   const [isSubmenuOpen, setIsSubmenuOpen] = React.useState(false);

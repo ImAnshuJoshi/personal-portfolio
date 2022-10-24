@@ -474,12 +474,17 @@ body {
   body{
     overflow-x: hidden;
   }
+  .hero{
+    height:110vh;
+    display: flex;
+    justify-content: flex-start;
+  }
   .hero-big-heading{
     margin-left: 20vw;;
   }
   .me-resume{
     /* position: absolute; */
-    transform: translate(-13vw,25vw);
+    transform: translate(-8vw,25vw);
     display: block;
     width: 50vw;
     margin-left: 30vw;
@@ -509,6 +514,9 @@ body {
   }
 }
 @media only screen and (max-width: 900px){
+  .hero{
+    height:120vh;
+  }
   .hero-big-heading{
     transform: translateX(-80px);
   }
@@ -525,6 +533,9 @@ body {
   }
 }
 @media only screen and (max-width: 770px) {
+  .hero{
+    height:125vh;
+  }
   .hero-desc {
     width: auto;
   }
@@ -600,6 +611,12 @@ body {
 /* TECH STACK STYLING */
 .techstack {
   margin-top: 10vh;
+  margin-left: 10vw;
+  width:80vw;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
 }
 .techstack-header {
   margin-right: var(--spacing-small);
@@ -678,4 +695,5 @@ body {
 
 .techstack-language-icon:hover {
   transform: scale(1.15);
+  cursor: pointer;
 }

@@ -4,8 +4,9 @@ import { languages } from '../../data'
 import Languageicon from '../LanguageIcon/Languageicon.js';
 
 function Skills() {
+  const containerRef = React.useRef(null);
   return (
-    <section className='techstack'>
+    <section className='techstack' ref={containerRef}>
         <div className='techstack-header'>
         <FaStackOverflow /> Tech Stack
         <div className='horizontal-line'></div>
@@ -17,7 +18,8 @@ function Skills() {
               key={index}
               language={language}
               style={{ margin: '5px' }}
-            />
+              containerRef={containerRef}
+            />  
           );
         })}
       </div>

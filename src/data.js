@@ -25,6 +25,9 @@ import {
   SiJsonwebtokens,
   SiBootstrap,
   SiAdobeaftereffects,
+  SiAdobephotoshop,
+  SiAdobepremierepro,
+  SiCanva
 } from 'react-icons/si';
 
 const navLinks = [
@@ -86,6 +89,18 @@ const socials = [
 
 
 const languages = [
+  {
+    name: 'html5',
+    icon: <SiHtml5 />,
+    color: '#e34c26',
+    desc: 'HTML (Hypertext Markup Language) is the code that is used to structure a web page and its content.',
+  },
+  {
+    name: 'css3',
+    icon: <SiCss3 />,
+    color: '#264de4',
+    desc: 'CSS (Cascading Style Sheets) is used to style and layout web pages',
+  },
     {
       name: 'javascript',
       icon: <SiJavascript />,
@@ -103,18 +118,6 @@ const languages = [
       icon: <FaNodeJs />,
       color: '#68a063',
       desc: 'Node. js is primarily used for non-blocking, event-driven servers, due to its single-threaded nature. It is used for traditional web sites and back-end API services',
-    },
-    {
-      name: 'html5',
-      icon: <SiHtml5 />,
-      color: '#e34c26',
-      desc: 'HTML (Hypertext Markup Language) is the code that is used to structure a web page and its content.',
-    },
-    {
-      name: 'css3',
-      icon: <SiCss3 />,
-      color: '#264de4',
-      desc: 'CSS (Cascading Style Sheets) is used to style and layout web pages',
     },
     {
       name: 'postgres',
@@ -157,12 +160,6 @@ const languages = [
       desc: 'Netlify is a San Francisco-based cloud computing company that offers hosting and serverless backend services for web applications and static websites.',
     },
     {
-      name: 'socketio',
-      icon: <SiSocketdotio />,
-      color: '#ffffff',
-      desc: 'Socket.IO is a library that enables real-time, bidirectional and event-based communication between the browser and the server.',
-    },
-    {
       name: 'markdown',
       icon: <FaMarkdown />,
       color: '#ffffff',
@@ -187,18 +184,6 @@ const languages = [
       desc: 'Google Firebase is a Google-backed application development software that enables developers to develop iOS, Android and Web apps.',
     },
     {
-      name: 'stripe',
-      icon: <SiStripe />,
-      color: '#008cdd',
-      desc: 'Stripe allows business owners to accept payments from credit and debit cards and processes those payments.',
-    },
-    {
-      name: 'chakraui',
-      icon: <SiChakraui />,
-      color: '#319795',
-      desc: 'Chakra UI is a simple, modular and accessible component library that gives you the building blocks you need to build your React applications.',
-    },
-    {
       name: 'jwt',
       icon: <SiJsonwebtokens />,
       color: '#d63aff',
@@ -217,11 +202,24 @@ const languages = [
       desc: 'Figma is a powerful design tool that helps you to create anything: websites, applications, logos, and much more.',
     },
     {
-      name: 'adobe illustrator',
-      icon: <SiAdobeaftereffects />,
-      color: '#964B00',
-      desc: 'Adobe Illustrator is the industry standard design app that lets you capture your creative vision with shapes, color, effects, and typography.',
+      Name:"Adobe Photoshop",
+      icon:<SiAdobephotoshop/>,
+      color:"#264de4",
+      desc:"Adobe Photoshop is the raster graphics editor."
     },
+    {
+      Name:"Adobe Preimere Pro",
+      icon:<SiAdobepremierepro/>,
+      color:"#d63aff",
+      desc:"Adobe Premiere Pro is a timeline-based and non-linear video editing software application."
+    },
+    {
+      Name:"Canva",
+      icon:<SiCanva/>,
+      color:"#61DBFB",
+      desc:"Canva is a graphic design platform, used to create social media graphics, presentations, posters, documents and other visual content."
+    },
+
   ];
   
 

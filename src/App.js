@@ -13,7 +13,7 @@ function App() {
       <Navbar mainRef={mainRef}/>
       <Theme/>
       <MainPage/>
-      {/* <Skills/> */}
+      <Skills/>
       <Connect/>
     </div>
   );
