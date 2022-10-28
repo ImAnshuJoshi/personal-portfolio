@@ -17,16 +17,17 @@ function Projects() {
       </div>
       <div className="projects-container">
         {projects.map((project, index) => {
-          const skillicon = project.stack.map((item) => {
+          const skillList = project.stack.map((item) => {
             const language = languages.find((x) =>x.name === item)
+            console.log(language);
             return language;
           });
-
+          console.log(skillList);
           return (
             <ProjectCard
               key={index}
               project={project}
-              stackList={skillicon}
+              stackList={skillList}
               containerRef={containerRef}
               reverse={index % 2 !== 0 ? true : false}
             />

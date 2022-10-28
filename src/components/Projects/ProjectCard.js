@@ -45,7 +45,12 @@ export default function ProjectCard({
           <h3>Tech stack used : </h3>
           {stackList.map((language, index) => {
             return (
-              `hi`
+                <LanguageIcon
+                key={index}
+                language={language}
+                containerRef={containerRef}
+                cardIcon={true}
+              />
             );
           })}
         </div>

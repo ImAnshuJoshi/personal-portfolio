@@ -30,6 +30,7 @@ import {
   SiCanva
 } from 'react-icons/si';
 import unfoldicon from './assets/unfoldicon.png'
+import onecare from './assets/onecare.png'
 
 const navLinks = [
     {
@@ -235,23 +236,23 @@ const languages = [
         'nodejs',
         'css3',
         'html5',
-        'express',
+        'expressjs',
         'postgres'
       ],
       featured: true,
     },
     {
       name: 'One-care',
-      image: unfoldicon,
+      image: onecare,
       github_url: 'https://github.com/ImAnshuJoshi/Un-Fold',
       site_url: 'http://65.0.100.50',
-      desc: 'This is a blogging website to connect ideas and people around the globe.',
+      desc: 'This is a MERN stack website to keep all the medical records of the patient and doctors can directly upload their prescription for a patient.',
       stack: [
         'react',
         'nodejs',
         'css3',
         'html5',
-        'express',
+        'expressjs',
         'mongodb',
       ],
       featured: true,
