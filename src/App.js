@@ -5,6 +5,13 @@ import Connect from './components/connect/Connect.js';
 import Theme from './components/Theme/Theme.js';
 import MainPage from './components/MainPage/MainPage';
 import Skills from './components/Skills/Skills';
+import Projects from './components/Projects/Projects';
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  Link
+} from "react-router-dom";
 
 function App() {
   const mainRef = React.useRef(null);
@@ -12,8 +19,12 @@ function App() {
     <div className="App">
       <Navbar mainRef={mainRef}/>
       <Theme/>
-      <MainPage/>
-      <Skills/>
+      <Router>
+        <Routes>
+          <Route path='/' element={<><MainPage/><Skills/></>}/>
+          <Route path='/projects' element={<><Projects/></>}/>
+        </Routes>
+      </Router>
       <Connect/>
     </div>
   );

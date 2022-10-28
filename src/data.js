@@ -29,19 +29,20 @@ import {
   SiAdobepremierepro,
   SiCanva
 } from 'react-icons/si';
+import unfoldicon from './assets/unfoldicon.png'
 
 const navLinks = [
     {
       name: 'home',
-      url: '#',
+      url: '/',
     },
     {
       name: 'projects',
-      url: '#projects',
+      url: '/projects',
     },
     {
       name: 'contact',
-      url: '#contact',
+      url: '/contacts',
     },
   ];
 
@@ -221,6 +222,42 @@ const languages = [
     },
 
   ];
+
+  const projects = [
+    {
+      name: 'Un-Fold',
+      image: unfoldicon,
+      github_url: 'https://github.com/ImAnshuJoshi/Un-Fold',
+      site_url: 'http://65.0.100.50',
+      desc: 'This is a blogging website to connect ideas and people around the globe.',
+      stack: [
+        'javascript',
+        'nodejs',
+        'css3',
+        'html5',
+        'express',
+        'postgres'
+      ],
+      featured: true,
+    },
+    {
+      name: 'One-care',
+      image: unfoldicon,
+      github_url: 'https://github.com/ImAnshuJoshi/Un-Fold',
+      site_url: 'http://65.0.100.50',
+      desc: 'This is a blogging website to connect ideas and people around the globe.',
+      stack: [
+        'react',
+        'nodejs',
+        'css3',
+        'html5',
+        'express',
+        'mongodb',
+      ],
+      featured: true,
+    },
+  ];
+
   
 
-export {navLinks,socials,themes,languages};
+export {navLinks,socials,themes,languages,projects};

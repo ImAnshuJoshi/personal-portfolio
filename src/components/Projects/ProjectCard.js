@@ -1,0 +1,55 @@
+import React from 'react'
+import { FaGithub } from 'react-icons/fa';
+import { BsBoxArrowUpRight } from 'react-icons/bs';
+import LanguageIcon from '../LanguageIcon/Languageicon.js';
+
+export default function ProjectCard({
+    project,
+    reverse,
+    stackList,
+    containerRef
+}) {
+  return (
+    <div
+    className='project-card'
+    style={{
+      flexDirection: `${reverse ? 'row-reverse' : 'row'}`,
+    }}
+    >
+    <div
+        className='project-card-img'
+        // style={{ transform: `${reverse ? 'translateX(5rem)' : ''}` }}
+      >
+         <img src={project.image} alt='' />
+      </div>
+
+      <div className='project-card-info'>
+        <h6 className='project-card-title-featured'>PROJECT</h6>
+        <h1 className='project-card-title'>{project.name}</h1>
+        <span className='project-card-links'>
+          <a href={project.site_url} target='_blank' rel='noopener noreferrer'>
+            <BsBoxArrowUpRight />
+          </a>
+        </span>
+        <span className='project-card-links'>
+          <a
+            href={project.github_url}
+            target='_blank'
+            rel='noopener noreferrer'
+          >
+            <FaGithub />
+          </a>
+        </span>
+        <p className='project-card-text'>{project.desc}</p>
+        <div className='stack-container'>
+          <h3>Tech stack used : </h3>
+          {stackList.map((language, index) => {
+            return (
+              `hi`
+            );
+          })}
+        </div>
+      </div>
+    </div>
+  )
+}
