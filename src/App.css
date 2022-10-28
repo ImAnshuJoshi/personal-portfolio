@@ -639,6 +639,7 @@ body {
   width:80vw;
   margin-left: 10vw;
   margin-top: calc(2*var(--spacing-large));
+  margin-bottom: calc(2*var(--spacing-large));
 }
 
 /* PROJECTS CARD STYLING */

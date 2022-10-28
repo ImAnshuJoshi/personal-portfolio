@@ -31,6 +31,7 @@ import {
 } from 'react-icons/si';
 import unfoldicon from './assets/unfoldicon.png'
 import onecare from './assets/onecare.png'
+import folio from './assets/folio.png'
 
 const navLinks = [
     {
@@ -254,6 +255,17 @@ const languages = [
         'html5',
         'expressjs',
         'mongodb',
+      ],
+      featured: true,
+    },
+    {
+      name: 'Personal Portfolio',
+      image: folio,
+      github_url: 'https://github.com/ImAnshuJoshi/Portfolio',
+      site_url: 'https://anshujoshifolio.vercel.app',
+      desc: 'This is my first ever react project and personal portfolio website made with just react.',
+      stack: [
+        'react'
       ],
       featured: true,
     },
