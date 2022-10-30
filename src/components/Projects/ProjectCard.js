@@ -2,6 +2,7 @@ import React from 'react'
 import { FaGithub } from 'react-icons/fa';
 import { BsBoxArrowUpRight } from 'react-icons/bs';
 import LanguageIcon from '../LanguageIcon/Languageicon.js';
+import Tilt from 'react-parallax-tilt';
 
 export default function ProjectCard({
     project,
@@ -16,12 +17,14 @@ export default function ProjectCard({
       flexDirection: `${reverse ? 'row-reverse' : 'row'}`,
     }}
     >
+      <Tilt>
     <div
         className='project-card-img'
         // style={{ transform: `${reverse ? 'translateX(5rem)' : ''}` }}
-      >
+        >
          <img src={project.image} alt='' />
       </div>
+        </Tilt>
 
       <div className='project-card-info'>
         <h6 className='project-card-title-featured'>PROJECT</h6>

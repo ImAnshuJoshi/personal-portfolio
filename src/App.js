@@ -12,6 +12,7 @@ import {
   Route,
   Link
 } from "react-router-dom";
+import Contact from './components/Contact/Contact';
 
 function App() {
   const mainRef = React.useRef(null);
@@ -23,6 +24,7 @@ function App() {
         <Routes>
           <Route path='/' element={<><MainPage/><Skills/></>}/>
           <Route path='/projects' element={<><Projects/></>}/>
+          <Route path='/contacts' element={<><Contact/></>}/>
         </Routes>
       </Router>
       <Connect/>
