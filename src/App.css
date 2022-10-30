@@ -399,6 +399,7 @@ body {
   width: fit-content;
   display: flex;
   margin-top: var(--spacing-large);
+  border: none;
 }
 .hero-btn a {
   margin: 0;

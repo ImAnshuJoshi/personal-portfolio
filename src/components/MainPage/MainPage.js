@@ -2,6 +2,7 @@ import React from 'react'
 import {useState} from 'react'
 import me from '../../assets/me.png'
 import hello from '../../assets/hello.gif';
+import AnshuResume from '../../assets/AnshuResume.pdf'
 
 function MainPage() {
     const [download, setDownload] = useState(false);
@@ -17,19 +18,18 @@ function MainPage() {
         </p>
       </div>
       <div className='download-form'>
-      {/* <button
+      <button
         className='hero-btn primary-btn'
         onClick={() => setDownload(true)}
-        > */}
-        <a download=''>
+        >
+        <a download="AnshuResume" href={AnshuResume}>
           <span></span>
           <span></span>
           <span></span>
           <span></span>
-          {/* <p>{download ? 'Thanks For Your Interest !' : 'Download Resume'}</p> */}
-          <button>Download Resume</button>
+          <button>{download ? 'Thank You':'Download Resume' }</button>
         </a>
-      {/* </button> */}
+      </button>
         </div>
     </section>
     );
