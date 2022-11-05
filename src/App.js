@@ -1,4 +1,4 @@
-import React from 'react';
+import React,{useEffect} from 'react';
 import './App.css';
 import Navbar from './components/Navbar/Navbar';
 import Connect from './components/connect/Connect.js';
@@ -16,6 +16,10 @@ import Contact from './components/Contact/Contact';
 
 function App() {
   const mainRef = React.useRef(null);
+    useEffect(() => {
+      document.title = 'anfolio-Anshu Joshi';
+    });
+
   return (
     <div className="App">
       <Navbar mainRef={mainRef}/>
