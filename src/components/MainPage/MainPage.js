@@ -3,6 +3,7 @@ import {useState} from 'react'
 import me from '../../assets/me.png'
 import hello from '../../assets/hello.gif';
 import AnshuResume from '../../assets/AnshuResume.pdf'
+// import hero from '../../assets/hero.png'
 
 function MainPage() {
     const [download, setDownload] = useState(false);
@@ -31,6 +32,9 @@ function MainPage() {
         </a>
       </button>
         </div>
+        {/* <div>
+          <img src={hero}/>
+        </div> */}
     </section>
     );
   }
