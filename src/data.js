@@ -230,7 +230,7 @@ const languages = [
       name: 'Un-Fold',
       image: unfoldicon,
       github_url: 'https://github.com/ImAnshuJoshi/Un-Fold',
-      site_url: 'http://65.0.100.50',
+      site_url: 'http://unfold.onrender.com/',
       desc: 'This is a blogging website to connect ideas and people around the globe.',
       stack: [
         'javascript',
@@ -246,7 +246,7 @@ const languages = [
       name: 'One-care',
       image: onecare,
       github_url: 'https://github.com/ImAnshuJoshi/Un-Fold',
-      site_url: 'http://65.0.100.50',
+      site_url: 'https://one-care-app.vercel.app/',
       desc: 'This is a MERN stack website to keep all the medical records of the patient and doctors can directly upload their prescription for a patient.',
       stack: [
         'react',
