@@ -315,6 +315,9 @@ body {
 }
 
 @media only screen and (max-width: 770px) {
+  .nav{
+    
+  }
   .theme {
     position: relative;
     margin: 0;

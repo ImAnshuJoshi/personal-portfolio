@@ -53,9 +53,9 @@ return (
     <header>
         <nav className='nav flex-space-between pd-side-large' ref={navRef}>
         <div className='nav-header flex-space-between'>
-          <div className='nav-logo'>
-            {/* <img src={} alt='Anshu Joshi' className='nav-logo-img' /> */}
-          </div>
+          {/* <div className='nav-logo'>
+            <img src={} alt='Anshu Joshi' className='nav-logo-img' />
+          </div> */}
           {/* <Theme /> */}
           {/* <button
             className='nav-toggle-btn btn-transparent'
