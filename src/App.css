@@ -316,7 +316,7 @@ body {
 
 @media only screen and (max-width: 770px) {
   .nav{
-    
+
   }
   .theme {
     position: relative;
@@ -820,7 +820,8 @@ body {
 
 .background {
   display: flex;
-  min-height: 100vh;
+  /* min-height: 100vh; */
+  margin-top: calc(2*var(--spacing-large));
 }
 
 .container {
