@@ -339,12 +339,13 @@ body {
 
 /* HERO STYLING */
 .hero {
-  min-height: 95vh;
+  min-height: 80vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   width:40vw;
   margin-left: 15vw;
+  margin-top: calc(2.5*var(--spacing-large));
 }
 .hero-big-heading {
   background-image: url("./assets/ig.jpg");
@@ -377,11 +378,26 @@ body {
   font-weight: 100;
   font-size: clamp(30px, 4vw, 75px);
   color: var(--clr-primary-15);
+  font-weight: 100;
 }
 .secondry-big-heading::after {
   content: 'MERN stack web developer';
   transition: var(--transition);
   animation: wordChange 4s linear infinite alternate;
+}
+.hero{
+  display: flex;
+  flex-direction: row;
+  width:80%;
+  justify-content: space-around;
+  align-items: center;
+}
+.herome{
+  height:26rem;
+  width:26rem;
+  border-radius: 50%;
+  border:2px solid var(--clr-primary-10);
+  box-shadow: inset 0 0 5px 2px #282a2d;
 }
 @keyframes wordChange {
   0% {
@@ -534,7 +550,17 @@ body {
   }
 }
 
-
+@media only screen and (max-width:1100px){
+  .hero{
+    display: flex;
+    flex-direction: column-reverse;
+    transform: translateX(-30px);
+  }
+  .herome{
+    width:15rem;
+    height:15rem;
+  }
+}
 @media only screen and (max-width: 770px) {
   .hero-desc {
     width: auto;
@@ -545,6 +571,7 @@ body {
     min-height: 100vh;
   }
 }
+
 
 
 /* TECH STACK STYLING */
