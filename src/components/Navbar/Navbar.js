@@ -2,6 +2,7 @@ import React from 'react';
 import { navLinks } from '../../data.js';
 import { FaBars } from 'react-icons/fa';
 import { AiFillCloseCircle } from 'react-icons/ai';
+import './Navbar.css';
 
 export default function Navbar({ mainRef }) {
     const [navIsOpen, setNavIsOpen] = React.useState(false);
@@ -10,7 +11,20 @@ export default function Navbar({ mainRef }) {
     const childRef = React.useRef(null);
     const containerRef = React.useRef(null);
   
-  
+    React.useEffect(() => {
+      let navHeight = childRef.current.getBoundingClientRect().height;
+      if (navIsOpen) {
+        // containerRef.current.style.height = `${navHeight + 5}px`;
+        // mainRef.current.style.filter = `blur(5px)`;
+      } else {
+        // containerRef.current.style.height = `0px`;
+        // mainRef.current.style.filter = `blur(0px)`;
+        // containerRef.current.style.height = `${navHeight + 0}px`;
+        // mainRef.current.style.filter = `blur(0px)`;
+      }
+      // eslint-disable-next-line
+    }, [navIsOpen]);
+
     React.useEffect(() => {
       window.addEventListener('scroll', changeNavOnScroll);
       return () => window.removeEventListener('scroll', changeNavOnScroll);
@@ -43,12 +57,12 @@ return (
             {/* <img src={} alt='Anshu Joshi' className='nav-logo-img' /> */}
           </div>
           {/* <Theme /> */}
-          <button
+          {/* <button
             className='nav-toggle-btn btn-transparent'
             onClick={toggleNav}
           >
             {navIsOpen ? <AiFillCloseCircle /> : <FaBars />}
-          </button>
+          </button> */}
         </div>
         <div className='nav-links-container' ref={containerRef}>
           <ul className='nav-links flex' ref={childRef}>
