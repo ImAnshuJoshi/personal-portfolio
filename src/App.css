@@ -344,7 +344,7 @@ body {
   flex-direction: column;
   justify-content: center;
   width:40vw;
-  margin-left: 15vw;
+  margin-left: 12vw;
   margin-top: calc(2.5*var(--spacing-large));
 }
 .hero-big-heading {
@@ -554,7 +554,7 @@ body {
   .hero{
     display: flex;
     flex-direction: column-reverse;
-    transform: translateX(-30px);
+    transform: translateX(-15px);
   }
   .herome{
     width:15rem;
