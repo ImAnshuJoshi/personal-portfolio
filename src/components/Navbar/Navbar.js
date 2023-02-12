@@ -11,19 +11,19 @@ export default function Navbar({ mainRef }) {
   const childRef = React.useRef(null);
   const containerRef = React.useRef(null);
 
-  // React.useEffect(() => {
-  //   let navHeight = childRef.current.getBoundingClientRect().height;
-  //   if (navIsOpen) {
-  //     // containerRef.current.style.height = `${navHeight + 5}px`;
-  //     // mainRef.current.style.filter = `blur(5px)`;
-  //   } else {
-  //     // containerRef.current.style.height = `0px`;
-  //     // mainRef.current.style.filter = `blur(0px)`;
-  //     // containerRef.current.style.height = `${navHeight + 0}px`;
-  //     // mainRef.current.style.filter = `blur(0px)`;
-  //   }
-  //   // eslint-disable-next-line
-  // }, [navIsOpen]);
+  React.useEffect(() => {
+    let navHeight = childRef.current.getBoundingClientRect().height;
+    if (navIsOpen) {
+      // containerRef.current.style.height = `${navHeight + 5}px`;
+      // mainRef.current.style.filter = `blur(5px)`;
+    } else {
+      // containerRef.current.style.height = `0px`;
+      // mainRef.current.style.filter = `blur(0px)`;
+      // containerRef.current.style.height = `${navHeight + 0}px`;
+      // mainRef.current.style.filter = `blur(0px)`;
+    }
+    // eslint-disable-next-line
+  }, [navIsOpen]);
 
   React.useEffect(() => {
     window.addEventListener("scroll", changeNavOnScroll);
