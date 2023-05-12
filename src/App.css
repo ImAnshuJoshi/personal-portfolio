@@ -127,6 +127,9 @@ body {
 }
 
 /***NAVBAR***/
+/* nav{
+  margin-top: 0px;
+} */
 .nav {
   position: fixed;
   left: 0;
@@ -135,7 +138,7 @@ body {
   letter-spacing: 2px;
   background-color: var(--clr-primary-1);
   transition: top 0.125s linear;
-  margin-top: var(--spacing-medium);
+  padding-top: var(--spacing-medium);
   background: none;
 }
 .nav-high-brightness {
@@ -855,6 +858,7 @@ body {
   flex: 0 1 700px;
   margin: auto;
   padding: 10px;
+  margin-top: 120px;
 }
 
 .screen {
@@ -1055,6 +1059,9 @@ body {
 }
 
 @media screen and (max-width: 600px) {
+  .container{
+    margin-top: 0;
+  } 
   .screen-body {
     padding: 40px;
   }
