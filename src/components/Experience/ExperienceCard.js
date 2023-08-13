@@ -27,7 +27,7 @@ export default function ExperienceCard({
       </Tilt>
 
       <div className="project-card-info">
-        <h6 className="project-card-title-featured">PROJECT</h6>
+        <h6 className="project-card-title-featured">{experience.timeline}</h6>
         <h1 className="project-card-title">{experience.name}</h1>
         <span className="project-card-links">
           <p>{experience.position}</p>

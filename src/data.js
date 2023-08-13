@@ -29,12 +29,16 @@ import {
   SiAdobephotoshop,
   SiAdobepremierepro,
   SiCanva,
+  SiTypescript,
+  SiJirasoftware,
+  SiVuetify,
 } from "react-icons/si";
 import unfoldicon from "./assets/unfoldicon.png";
 import onecare from "./assets/onecare.png";
 import folio from "./assets/folio.png";
 import sportyphy from "./assets/sportyphy.png";
 import blinkstore from "./assets/blinkstore.png";
+import dashwave from "./assets/dashwave.png";
 
 const navLinks = [
   {
@@ -113,6 +117,12 @@ const languages = [
     name: "javascript",
     icon: <SiJavascript />,
     color: "#f0db4f",
+    desc: "JavaScript is commonly used for creating web pages. JavaScript helps us to execute complex actions and also enables the interaction of websites with visitors.",
+  },
+  {
+    name: "typescript",
+    icon: <SiTypescript />,
+    color: "#00BFFF",
     desc: "JavaScript is commonly used for creating web pages. JavaScript helps us to execute complex actions and also enables the interaction of websites with visitors.",
   },
   {
@@ -210,37 +220,52 @@ const languages = [
     desc: "Figma is a powerful design tool that helps you to create anything: websites, applications, logos, and much more.",
   },
   {
-    Name: "Adobe Photoshop",
+    name: "Adobe Photoshop",
     icon: <SiAdobephotoshop />,
     color: "#264de4",
     desc: "Adobe Photoshop is the raster graphics editor.",
   },
   {
-    Name: "Adobe Preimere Pro",
+    name: "Adobe Preimere Pro",
     icon: <SiAdobepremierepro />,
     color: "#d63aff",
     desc: "Adobe Premiere Pro is a timeline-based and non-linear video editing software application.",
   },
   {
-    Name: "Canva",
+    name: "Canva",
     icon: <SiCanva />,
     color: "#61DBFB",
     desc: "Canva is a graphic design platform, used to create social media graphics, presentations, posters, documents and other visual content.",
   },
   {
-    Name: "Vue",
-    icon: <FaVuejs />,
+    name: "vue",
+    icon: <SiVuetify />,
     color: "#589636",
-    desc: "",
+    desc: "Vue.js is an open-source model–view–viewmodel front end JavaScript library for building user interfaces and single-page applications.",
+  },
+  {
+    name: "jira",
+    icon: <SiJirasoftware />,
+    color: "#0000FF",
+    desc: "JavaScript is commonly used for creating web pages. JavaScript helps us to execute complex actions and also enables the interaction of websites with visitors.",
   },
 ];
 
 const experiences = [
   {
+    name: "Dashwave",
+    position: "Frontend developer",
+    image: dashwave,
+    timeline: "July 2023 - Present",
+    stack: ["react", "typescript", "figma", "jira"],
+    desc: `Worked on coding and implementing new componenets of the website from scratch in ReactJS, achieving overall accessibility of the website to 97%.\n Explored tools such as Jira for issue and bug tracking.`,
+  },
+  {
     name: "Blinkstore",
     position: "Full Stack developer",
     image: blinkstore,
-    stack: ["nodejs", "mongodb"],
+    timeline: "Jan 2023 - Feb 2023",
+    stack: ["nodejs", "mongodb", "vue"],
     desc: "Worked on VueJS in the frontend and nodeJS and mongoDB in the backend . Redesigned and made new UI components. Implemented new APIs in the backend . Also automated the task to access user data in google sheets using app script.",
   },
 ];
