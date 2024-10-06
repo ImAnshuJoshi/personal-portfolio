@@ -39,6 +39,7 @@ import folio from "./assets/folio.png";
 import sportyphy from "./assets/sportyphy.png";
 import blinkstore from "./assets/blinkstore.png";
 import dashwave from "./assets/dashwave.png";
+import mercari from "./assets/mercari.png";
 
 const navLinks = [
   {
@@ -253,8 +254,17 @@ const languages = [
 
 const experiences = [
   {
+    name: "Mercari Inc.",
+    position: "Software developer internship",
+    image: mercari,
+    timeline: "May 2024 - July 2024",
+    stack: ["react", "typescript", "figma", "jira"],
+    desc: `Main problem statement was to optimize US customer engagement on the JAPAN site, boosting GMV and retention in the duration of 2 months internship. Worked on developing AI chat bot for smart keyword based results improving conversion rate by 14.9%. Implementation on internationalization of Mercari webapp which includes usages of i18n, NextJS, Jotai catering
+users of US, Taiwan and Japan and release of Japan website catering Taiwan users. `,
+  },
+  {
     name: "Dashwave",
-    position: "Frontend developer",
+    position: "Frontend developer internship",
     image: dashwave,
     timeline: "July 2023 - Present",
     stack: ["react", "typescript", "figma", "jira"],
